@@ -1,5 +1,5 @@
 # INFORME CTI COMPLETO - ANÁLISIS DE CLUSTER DE AMENAZAS
-
+![condor](image.jpg)
 **IP Principal:** 111.36.152.14  
 **Fecha del Informe:** 21 de agosto de 2026  
 **Clasificación:** CONFIDENCIAL / USO INTERNO  (DESCLASIFICADO)
