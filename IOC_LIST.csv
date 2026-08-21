@@ -1,0 +1,18 @@
+Tipo,Valor,País,ASN,Contexto,Severidad,Fecha
+IPv4,111.36.152.14,CN,AS24444,IP Principal - Botnet Node,CRITICO,2026-08-21
+IPv4,103.69.9.16,IN,AS134326,Nodo India - 12 detecciones,CRITICO,2026-08-21
+IPv4,210.206.24.238,KR,AS3786,Nodo Corea - 15 detecciones,CRITICO,2026-08-21
+IPv4,116.98.104.138,VN,,Nodo Vietnam,ALTO,2026-08-21
+IPv4,122.186.200.10,IN,,Nodo India - Password Spray,ALTO,2026-08-21
+IPv4,188.168.86.6,RU,,Nodo Rusia - SSH Attacks,ALTO,2026-08-21
+IPv4,160.154.84.190,CI,,Nodo Costa de Marfil - Dominios Synelia,ALTO,2026-08-21
+IPv4,213.230.127.217,UZ,,Nodo Uzbekistán,ALTO,2026-08-21
+IPv4,220.189.196.134,CN,,Nodo China - Secundario,ALTO,2026-08-21
+IPv4,221.224.133.98,CN,,Nodo China - Secundario,ALTO,2026-08-21
+Dominio,bf.alinto.ovh,FR,,Dominio C2/Phishing,CRITICO,2026-08-21
+Dominio,moiseevanv.keenetic.link,RU,,DDNS Router Comprometido,CRITICO,2026-08-21
+Dominio,dashboard-bi-resource.synelia.tech,CI,,Dominio Secuestrado,ALTO,2026-08-21
+Dominio,193eprojet.smile.ci,CI,,Dominio Secuestrado,ALTO,2026-08-21
+ASN,AS24444,CN,,Shandong Mobile Communication,CRITICO,2026-08-21
+ASN,AS3786,KR,,LG DACOM Corporation,CRITICO,2026-08-21
+ASN,AS134326,IN,,Airdesign Broadcast Media,CRITICO,2026-08-21
