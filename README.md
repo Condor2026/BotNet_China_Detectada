@@ -494,3 +494,272 @@ El análisis del cluster de amenazas centrado en `111.36.152.14` demuestra que:
 **Última actualización:** 21 de agosto de 2026
 
 ---
+
+# 🛡️ BotNet China Detectada - Cyber Threat Intelligence Report
+
+[![Estado de Amenaza](https://img.shields.io/badge/Threat%20Level-CRÍTICO-red)](https://github.com/Condor2026/BotNet_China_Detectada)
+[![IP Activa](https://img.shields.io/badge/IP%20Activa-Sí-brightgreen)](https://www.virustotal.com/gui/ip-address/111.36.152.14)
+[![Fecha](https://img.shields.io/badge/Fecha-22%20Agosto%202026-blue)](https://github.com/Condor2026/BotNet_China_Detectada)
+
+> **⚠️ ADVERTENCIA:** Este informe es **EXCLUSIVAMENTE PARA FINES EDUCATIVOS Y DE INVESTIGACIÓN**. No debe ser utilizado para actividades ilegales o maliciosas. Lea el archivo [`DISCLAIMER.md`](./DISCLAIMER.md) para más información.
+
+---
+
+## 📋 Descripción General
+
+Este repositorio contiene un informe completo de Inteligencia de Amenazas Cibernéticas (CTI) sobre la dirección IP **`111.36.152.14`**, identificada como un nodo activo de una **botnet global** especializada en ataques de **fuerza bruta** contra servidores de correo electrónico.
+
+### 📊 Resumen Ejecutivo
+
+| Métrica | Valor |
+|:---|:---|
+| **IP Principal** | `111.36.152.14` |
+| **País** | China (CN) - Jinan, Shandong |
+| **ASN** | `AS24444` - Shandong Mobile Communication Company Limited |
+| **Tipo de IP** | Móvil / Residencial |
+| **Último ataque** | 22 de agosto de 2026 - 11:24:29 (UTC+2) |
+| **Total de ataques** | 122 (histórico) / 8 (este mes) |
+| **Reportes de abuso** | 93 |
+| **Nivel de amenaza** | **CRÍTICO** |
+
+---
+
+## 🎯 Detección y Verificación
+
+### VirusTotal (6/91 Vendedores)
+
+| Vendedor | Clasificación |
+|:---|:---|
+| **Abusix** | Malicious |
+| **ADMINUSLabs** | Malicious |
+| **BitDefender** | Phishing |
+| **CyRadar** | Malicious |
+| **G-Data** | Phishing |
+| **Lionic** | Malicious |
+
+### Blocklist.de (Actividad Confirmada)
+
+| Fecha | Servicio | Estado |
+|:---|:---|:---|
+| 22.08.2026 11:24:11 | `sasl` (SMTP) | ✅ Bloqueado |
+| 19.08.2026 19:40:22 | `sasl` (SMTP) | ✅ Bloqueado |
+| 17.08.2026 02:38:39 | `sasl` (SMTP) | ✅ Bloqueado |
+
+### IPQualityScore
+
+| Atributo | Valor |
+|:---|:---|
+| **Threat Score** | 30 / 100 |
+| **Known Attacker** | ✅ Sí |
+| **Proxy** | ❌ No |
+| **VPN** | ❌ No |
+| **Tor** | ❌ No |
+| **Bot** | ❌ No |
+| **Spam** | ❌ No |
+
+### Geolocalización
+
+| Atributo | Valor |
+|:---|:---|
+| **País** | China (🇨🇳) |
+| **Provincia** | Shandong |
+| **Ciudad** | Jinan |
+| **Coordenadas** | 36.66660° N, 117.07680° E |
+| **Tipo de conexión** | Móvil |
+| **Ruta** | `111.36.144.0/20` |
+
+---
+
+## 🌐 Cluster de Amenazas Global
+
+La IP `111.36.152.14` está conectada a una **botnet global** con nodos en más de 25 países:
+
+| Región | Países Representados |
+|:---|:---|
+| **Asia** | China, India, Vietnam, Corea del Sur, Uzbekistán, Bangladesh, Malasia, Israel, Afganistán |
+| **Europa** | Rusia, Francia, Noruega, Suecia |
+| **América** | Brasil, México, Estados Unidos |
+| **África** | Costa de Marfil, Uganda |
+| **Oceanía** | Australia, Nueva Zelanda |
+
+### IPs Relacionadas (Muestra)
+
+```
+111.36.152.14 (CN) - Principal
+103.69.9.16 (IN) - 12 detecciones
+210.206.24.238 (KR) - 15 detecciones
+116.98.104.138 (VN)
+122.186.200.10 (IN)
+188.168.86.6 (RU)
+160.154.84.190 (CI)
+213.230.127.217 (UZ)
+220.189.196.134 (CN)
+221.224.133.98 (CN)
+```
+
+---
+
+## 🔍 TTPs y Patrones de Ataque
+
+### MITRE ATT&CK Framework
+
+| Táctica | Técnica | Evidencia |
+|:---|:---|:---|
+| **Reconocimiento** | T1595 - Active Scanning | Escaneos de puertos SMTP/Exchange |
+| **Acceso Inicial** | T1110 - Brute Force | Intentos fallidos de login SASL/SMTP |
+| **Acceso Inicial** | T1110.003 - Password Spraying | Ataques contra O365 |
+| **Comando y Control** | T1071 - Application Layer Protocol | Dominios C2 (`.synelia.tech`, `.smile.ci`) |
+
+### Servicios Afectados
+
+- **SMTP** (MailEnable, Postfix, SmarterMail)
+- **Microsoft Exchange**
+- **Office 365**
+- **SSH** (en nodos rusos)
+
+### Dominios C2 Asociados
+
+```
+bf.alinto.ovh
+moiseevanv.keenetic.link
+dashboard-bi-resource.synelia.tech
+193eprojet.smile.ci
+193dgamp-development-account-management.synelia.tech
+193dgamp-paiement-service.synelia.tech
+84.193eprojet.smile.ci
+84.193dgamp-development-account-management.synelia.tech
+84.193dgamp-paiement-service.synelia.tech
+154.84.193dgamp-development-account-management.synelia.tech
+154.84.193eprojet.smile.ci
+154.84.193dgamp-paiement-service.synelia.tech
+160.154.84.193dgamp-paiement-service.synelia.tech
+160.154.84.193dgamp-development-account-management.synelia.tech
+160.154.84.193eprojet.smile.ci
+189160.154.84.189dgamp-longhorn.synelia.tech
+189hubsupport.synelia.tech
+189kibana.abj.synelia.tech
+84.189160.154.84.189dgamp-longhorn.synelia.tech
+84.189hubsupport.synelia.tech
+84.189kibana.abj.synelia.tech
+154.84.189160.154.84.189dgamp-longhorn.synelia.tech
+```
+
+---
+
+## 📁 Contenido del Repositorio
+
+| Archivo | Descripción |
+|:---|:---|
+| `README.md` | Este archivo - Resumen del informe |
+| `INFORME_CTI_COMPLETO.md` | Informe completo de inteligencia |
+| `IOC_LIST.csv` | Lista de Indicadores de Compromiso |
+| `LICENSE` | Licencia MIT con términos adicionales |
+| `DISCLAIMER.md` | Exoneración de responsabilidad legal |
+
+---
+
+## 🛡️ Recomendaciones
+
+### A. Bloqueo Inmediato (Prioridad CRÍTICA)
+
+IPs a bloquear:
+  - 111.36.152.14 (CN)
+  - 103.69.9.16 (IN)
+  - 210.206.24.238 (KR)
+  - 116.98.104.138 (VN)
+  - 122.186.200.10 (IN)
+  - 188.168.86.6 (RU)
+  - 160.154.84.190 (CI)
+  - 213.230.127.217 (UZ)
+  - 220.189.196.134 (CN)
+  - 221.224.133.98 (CN)
+  # ... + 33 IPs adicionales (ver IOC_LIST.csv)
+```
+
+### B. Bloqueo de Dominios
+
+Dominios a bloquear:
+  - bf.alinto.ovh
+  - moiseevanv.keenetic.link
+  - dashboard-bi-resource.synelia.tech
+  - 193eprojet.smile.ci
+  - 193dgamp-development-account-management.synelia.tech
+  - 193dgamp-paiement-service.synelia.tech
+  # ... + 16 dominios adicionales (ver IOC_LIST.csv)
+```
+
+### C. Monitoreo Proactivo
+
+1. **Feeds de inteligencia:**
+   - Incorporar `AS24444`, `AS3786`, `AS134326` en feeds de bloqueo
+   - Suscribirse a las colecciones de VirusTotal identificadas
+
+2. **SIEM Alerts:**
+   - Alertar sobre intentos de autenticación fallidos desde estas IPs
+   - Monitorizar tráfico hacia los dominios listados
+
+3. **Honeypot Deployment:**
+   - Desplegar honeypots de SMTP/Exchange para detectar nuevos nodos
+   - Compartir hallazgos con la comunidad (AbuseIPDB, VirusTotal)
+
+### D. Respuesta a Incidentes
+
+1. **Si se detectó acceso exitoso:**
+   - Rotar credenciales de todos los usuarios afectados
+   - Forzar MFA en todas las cuentas
+   - Realizar análisis forense de logs
+
+2. **Notificación:**
+   - Reportar a los ISP correspondientes (China Mobile, LG DACOM, etc.)
+   - Compartir IOCs con la comunidad de seguridad
+
+---
+
+## 🔗 Enlaces de Referencia
+
+- [VirusTotal - 111.36.152.14](https://www.virustotal.com/gui/ip-address/111.36.152.14)
+- [AbuseIPDB](https://www.abuseipdb.com/check/111.36.152.14)
+- [IPQualityScore](https://www.ipqualityscore.com/ip/111.36.152.14)
+- [Blocklist.de](https://www.blocklist.de/en/view.html?ip=111.36.152.14)
+- [GreyNoise](https://greynoise.io/query?ip=111.36.152.14)
+
+---
+
+## 📅 Actualizaciones
+
+| Versión | Fecha | Cambios |
+|:---|:---|:---|
+| 1.0 | 21.08.2026 | Publicación inicial |
+| 2.0 | 22.08.2026 | Añadidos datos de Blocklist.de, IPQS y cluster global |
+
+---
+
+## ⚖️ Licencia
+
+Este proyecto está bajo la Licencia **MIT con términos adicionales** para inteligencia de amenazas. Ver el archivo [`LICENSE`](./LICENSE) para más detalles.
+
+---
+
+## 👥 Autor
+
+**Condor2026** / **KiraSecurity Intelligence Team**
+
+---
+
+**© 2026 - Condor2026 / KiraSecurity Intelligence Team**  
+*Uso exclusivo para investigación y educación*
+```
+
+
+## Resumen de Archivos para el Repositorio
+
+| Archivo | Propósito | Estado |
+|:---|:---|:---|
+| `README.md` | Descripción del proyecto | ✅ Actualizado |
+| `DISCLAIMER.md` | Exoneración legal | ✅ Creado |
+| `LICENSE` | Licencia MIT con términos adicionales | ✅ Creado |
+| `IOC_LIST.csv` | Lista de Indicadores de Compromiso | ✅ Creado |
+| `SECURITY.md` | Política de seguridad | ✅ Opcional |
+| `INFORME_CTI_COMPLETO.md` | Informe completo | ✅ Creado |
+
+
