@@ -755,11 +755,10 @@ Este proyecto está bajo la Licencia **MIT con términos adicionales** para inte
 
 | Archivo | Propósito | Estado |
 |:---|:---|:---|
-| `README.md` | Descripción del proyecto | ✅ Actualizado |
+| `README.md` | Informe completo | ✅ Actualizado |
 | `DISCLAIMER.md` | Exoneración legal | ✅ Creado |
 | `LICENSE` | Licencia MIT con términos adicionales | ✅ Creado |
 | `IOC_LIST.csv` | Lista de Indicadores de Compromiso | ✅ Creado |
 | `SECURITY.md` | Política de seguridad | ✅ Opcional |
-| `INFORME_CTI_COMPLETO.md` | Informe completo | ✅ Creado |
 
 
